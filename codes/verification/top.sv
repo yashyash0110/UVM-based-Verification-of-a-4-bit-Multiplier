@@ -16,9 +16,6 @@ import uvm_pkg::*; //Gives access to the base class from which we can build the 
 
 module top;
   
-  logic [3:0] a,b;
-  logic [7:0] y;
-  
   mul_intf mif();
   
   mul_4bit dut(.input1(mif.a),.input2(mif.b),.mul_output(mif.y));
